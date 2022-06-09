@@ -66,20 +66,45 @@
     letter-spacing: 1rem;
 }
 .signup{
-    position: fixed;
     height: 20em;
     width: 69em;
     background: rgba(255, 255, 255, 0.45);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(11px);
     -webkit-backdrop-filter: blur(11px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 .mainbar .tophero{
     position: absolute;
+    display: block;
     top: 3em;
     font-weight: 500;
     color: white;
     margin: 1em;
-    text-align: left;
+}
+input, label {
+    display:block !important;
+}
 
+.signup form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3em;
+    align-content: space-evenly;
+}
+.signup input{
+    width: 100%;
+}
+.signup div{
+    width: 33%;
+    box-sizing: border-box;
+    vertical-align: center;
+    text-align: center;
+    margin-right: 3em;
+    margin-left: 3em;
 }
