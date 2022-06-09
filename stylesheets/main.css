@@ -1,3 +1,4 @@
+
 *{
     font-family: 'Mukta', sans-serif;
 }
@@ -6,7 +7,7 @@
     padding: 1em;
     justify-content: space-between;
     align-items: center;
-
+    margin-top: 1.75em;
 }
 .sidebar{
     height: 60em;
@@ -18,17 +19,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-shrink: 1;
 }
 .mainbar{
-    height: 50em;
-    display: inline-block;
+    height: 60em;
+    display: flex;
     width: 67.75em;
-    background: rgba(255, 255, 255, 0.22);
-    border-radius: 8px;
+    background: rgba(14, 13, 13, 0.47);
+    border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(9.7px);
-    -webkit-backdrop-filter: blur(9.7px);
-    border: 1px solid rgba(255, 255, 255, 0.01);
+    backdrop-filter: blur(10.8px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(14, 13, 13, 0.21);
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
 }
 .logo{
     height: 20em;
@@ -50,5 +57,24 @@
 
     margin-top: -0.4em;
     font-size: 5rem;
+    letter-spacing: 1rem;
+}
+.signup{
+    position: fixed;
+    height: 20em;
+    width: 67.5em;
+    background: rgba(255, 255, 255, 0.45);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11px);
+    -webkit-backdrop-filter: blur(11px);
+    border: 1px solid rgba(255, 255, 255, 0.26);
+}
+.mainbar .tophero{
+    position: absolute;
+    top: 3em;
+    font-weight: 500;
+    color: white;
+    margin: 1em;
+    text-align: left;
 
 }
