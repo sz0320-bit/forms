@@ -14,28 +14,34 @@
     position: sticky;
     width: 40em;
     border-radius: 8px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     background: url("/images/bcbafd922c088c9a1dd579b68661c4f2.jpg");
     display: flex;
     justify-content: center;
     align-items: center;
     flex-shrink: 1;
+    border: 2px solid lightslategrey;
+    border-right: none;
 }
 .mainbar{
     height: 60em;
     display: flex;
-    width: 67.75em;
+    width: 69em;
     background: rgba(14, 13, 13, 0.47);
-    border-radius: 16px;
+    border-radius: 8px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10.8px);
     -webkit-backdrop-filter: blur(6px);
-    border: 1px solid rgba(14, 13, 13, 0.21);
+    border: 2px solid lightslategray;
+    border-left: none;
     flex-shrink: 0;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 .logo{
     height: 20em;
@@ -62,12 +68,11 @@
 .signup{
     position: fixed;
     height: 20em;
-    width: 67.5em;
+    width: 69em;
     background: rgba(255, 255, 255, 0.45);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(11px);
     -webkit-backdrop-filter: blur(11px);
-    border: 1px solid rgba(255, 255, 255, 0.26);
 }
 .mainbar .tophero{
     position: absolute;
