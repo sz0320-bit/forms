@@ -8,6 +8,7 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 1.75em;
+    flex-direction: row;
 }
 .sidebar{
     height: 60em;
@@ -37,8 +38,7 @@
     border: 2px solid lightslategray;
     border-left: none;
     flex-shrink: 0;
-    align-items: center;
-    justify-content: center;
+
     flex-direction: column;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
@@ -61,7 +61,7 @@
 }
 .logo h1{
 
-    margin-top: -0.4em;
+
     font-size: 5rem;
     letter-spacing: 1rem;
 }
@@ -80,13 +80,16 @@
 .mainbar .tophero{
     position: absolute;
     display: block;
-    top: 3em;
+
     font-weight: 500;
     color: white;
     margin: 1em;
 }
-input, label {
+.signup label {
     display:block !important;
+    font-size: 1.5em;
+    color: black;
+    font-weight: bolder;
 }
 
 .signup form{
@@ -94,17 +97,51 @@ input, label {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 3em;
+    gap: 1em;
     align-content: space-evenly;
 }
 .signup input{
     width: 100%;
+    background: rgba(14, 13, 13, 0.47);
+    border-radius: 8px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10.8px);
+    -webkit-backdrop-filter: blur(6px);
+    text-align: center;
+    color: white;
+    font-size: 1.2em;
+    filter: drop-shadow(.075em .075em black);
 }
 .signup div{
     width: 33%;
     box-sizing: border-box;
     vertical-align: center;
     text-align: center;
-    margin-right: 3em;
-    margin-left: 3em;
+    margin-right: 3.5em;
+    margin-left: 3.5em;
+}
+.bottombar{
+    width: 68.6em;
+    height: 19.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.topbar{
+    width: 68.6em;
+    height: 19.5em;
+    display: flex;
+    overflow: clip;
+}
+
+#submit{
+    width: 2em;
+    font-size: 5rem;
+}
+.bottombar h2{
+    color: white;
+}
+.bottombar h2 span{
+    color: white;
+    filter: drop-shadow(.2em .2em blue);
 }
