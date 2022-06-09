@@ -20,7 +20,7 @@
         <div class="topbar">        <h1 class="tophero">This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up<span> now </span>to get started.<br><br>You <span>know </span>you want to.</br></br></h1>
         </div>
         <div class="signup">
-            <form>
+            <form class="mainform" action="http://httpbin.org/post" method="post">
                 <div>
                     <label for="firstname">First Name</label>
                     <input type="text" id="firstname" name="firstname">
@@ -49,10 +49,11 @@
             </form>
         </div>
         <div class="bottombar"><
-            <input type="button" id="submit" value="Submit">
+            <button type="submit" class="submit" value="Submit">Submit</button>
             <h2>Don't have an account yet? <span>Sign Up!</span></h2>
         </div>
     </div>
 </div>
+<script src="/scripts/main.js"></script>
 </body>
 </html>
